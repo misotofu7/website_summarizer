@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <body style="font-family: sans-serif; width: 300px;">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Summarizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
     <h3>Page Summarizer</h3>
 
-    <!-- user API key input here (type password kids key) -->
+    <!-- user API key input here (type password kids) -->
     <label for="api-key">OpenAI API Key</label>
     <br>
     <input
@@ -12,14 +18,14 @@
       placeholder="sk-..."
       style="width: 100%;"
     />
-    <button id="save-api-key">Save API Key</button>"
+    <button id="save-api-key">Save API Key</button>
 
     <!-- horizontal line -->
-    <hr />
+    <hr>
 
     <button id="extract">Summarize Page</button>
 
-    <!-- hamburger drop menu after clicking this button -->
+    <!-- hamburger drop omenu after clicking this button -->
     <button id="explanation-modes">Explanation Modes</button>
 
     <!-- collapsable menu from hamburger button above -->
