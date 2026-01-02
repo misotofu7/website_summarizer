@@ -8,11 +8,5 @@
   },
   "background": {
     "service_worker": "src/background/background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["src/content/content.js"]
-    }
-  ]
+  }
 }

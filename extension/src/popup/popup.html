@@ -9,7 +9,7 @@
   <body>
     <h3>Page Summarizer</h3>
 
-    <!-- user API key input here (type password kids) -->
+    <!-- type API key here -->
     <label for="api-key">OpenAI API Key</label>
     <br>
     <input
@@ -18,9 +18,27 @@
       placeholder="sk-..."
       style="width: 100%;"
     />
-    <button id="save-api-key">Save API Key</button>
 
-    <!-- horizontal line -->
+    <!-- checkbox to remember key or not in the future -->
+    <div style="margin-top: 6px;">
+      <label style="font-size: 12px;">
+        <input type="checkbox" id="remember-key"/>
+        Remember key on this device
+      </label>
+    </div>
+
+    <!-- save and clear buttons -->
+    <div>
+      <button id="save-api-key" style="flex:1;">Save</button>
+      <button id="clear-api-key" style="flex:1;">Clear</button>
+    </div>
+
+    <!-- quick security reminder to user -->
+    <p style="font-size:12px; opacity:0.8; margin-top:10px;">
+      Safety: Your key is stored locally in your browser. If “Remember” is off, it’s kept only for this browser session.
+      Avoid summarizing sensitive pages (banking, medical, private documents).
+    </p>
+
     <hr>
 
     <button id="extract">Summarize Page</button>
@@ -33,6 +51,11 @@
       <button class="mode-button" data-mode="like_i_am_5">Like I'm 5</button>
       <button class="mode-button" data-mode="expert">Expert</button>
       <button class="mode-button" data-mode="bullet_points">Bullet Points</button>
+    </div>
+
+    <div
+      id="status"
+      style="margin-top: 10px; font-size: 12px;">
     </div>
 
     <div
