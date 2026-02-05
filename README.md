@@ -1,2 +1,4 @@
-# website_summarizer
-An extension that summarizes an entire page.
+# Website Summarizer
+
+A Google Chrome extension that summarizes an entire page.
+
